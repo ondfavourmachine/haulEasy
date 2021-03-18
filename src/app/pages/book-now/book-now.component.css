@@ -1,0 +1,109 @@
+.circle {
+  height: 42px;
+  width: 42px;
+  background: #f89521;
+  border: 1px solid #bebaba;
+  border-radius: 50%;
+}
+
+.circle::after {
+  content: "";
+  height: 1px;
+  width: 80px;
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  background: #bebaba;
+}
+
+.circle.active {
+  background: var(--heading-text-color);
+}
+
+.circle.not-active {
+  background: transparent;
+}
+
+.circle.remove::after {
+  opacity: 0;
+}
+
+.circle-house {
+  height: 80px;
+}
+
+.text-under-circle {
+  font-size: 0.7rem;
+  width: 89px;
+  line-height: 0.7rem;
+  color: var(--modified-text-color);
+  font-weight: 200;
+}
+
+.modified {
+  font-family: "SF Pro Display";
+  color: var(--heading-text-color);
+}
+
+.form-row {
+  margin-top: -3px;
+}
+
+.change-view {
+  right: 3%;
+  top: 2%;
+  cursor: pointer;
+  text-decoration: underline dotted black;
+}
+
+.shadow {
+  box-shadow: -1px 0px 6px 0px rgba(0, 0, 0, 0.28);
+}
+
+.reduced-text {
+  color: var(--modified-text-color);
+  line-height: 1.1rem;
+  font-size: 10px;
+  padding: 5px;
+}
+
+.heading-under-img {
+  color: var(--modified-text-color);
+  line-height: 10px !important;
+  margin: 0 0 7px 0 !important;
+  font-weight: 500;
+}
+
+.my-overlay {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: linear-gradient(rgb(255 255 255 / 0.2), rgb(255 255 255 / 0.8));
+}
+
+.total_deliveryfree {
+  color: var(--bright-green) !important;
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.booking_details {
+  margin-bottom: 0 !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.booking_details span:nth-child(1) {
+  color: var(--darker-heading-text-color);
+  font-size: 12px;
+  line-height: 10px;
+}
+
+.booking_details span:nth-child(2) {
+
+  font-size: 10px;
+
+}

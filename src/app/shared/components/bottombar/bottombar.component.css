@@ -1,0 +1,42 @@
+.sign span a,
+.sign span {
+  font-size: 16px;
+}
+
+.footer div h5 {
+  font-size: 20px !important;
+  font-weight: bold;
+  color: #707070;
+}
+#footer h5 {
+  color: #707070;
+}
+.footer div p,
+.footer div p .footer-links {
+  font-size: 15px;
+  color: #707070 !important;
+}
+
+@media (max-width: 991px) {
+  .footer div.col-md-6 {
+    margin-bottom: 40px !important;
+  }
+
+  .footer div h5.text-3.mb-3 {
+    font-size: 25px !important;
+  }
+
+  .footer div p {
+    font-size: 16px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .box.rounded img {
+    width: 100%;
+  }
+}
+
+/* styles for h5 */
+h5 {
+  color: var(--darker-heading-text-color) !important;
+}

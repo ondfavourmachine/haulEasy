@@ -1,0 +1,62 @@
+
+.caption h1, .caption p{
+  color: #2C272E !important;
+}
+.caption h1 span{
+  font-weight: lighter;
+}
+html .bg-color-dark-scale-2{
+  background-color: #1D75BC !important;
+}
+.bg-color-dark-scale-2.box h4, .bg-color-dark-scale-2.box p{
+  color: #FFFFFF !important;
+}
+.board{
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px 80px;
+}
+.footer div h5{
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+
+}
+.footer div p, .footer div p .footer-links{
+  font-size: 15px ;
+  color: #fff !important;
+}
+
+.about-heading{
+  color: #1774BA !important;
+}
+.about-caption p{
+  font-size: 16px;
+}
+.board{
+  padding-top: 70px !important;
+  /*background-image: url(../../assets/img/control/board_bg.svg);*/
+  background-size: 70% 70%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+
+@media (max-width: 991px) {
+  .board{
+    padding: 30px 10px !important;
+    margin: 100px 5px !important;
+    /*background-image: url(../../assets/img/control/board_mobile_bg.svg);*/
+    background-size: 70% 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .board div h1{
+    font-size: 34px !important;
+  }
+  .board div p{
+    font-size: 16px !important;
+  }
+
+
+}

@@ -1,0 +1,25 @@
+.options {
+  color: var(--heading-text-color) !important;
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+
+.card-body {
+  padding: 1.25rem 1.25rem 0.5rem 1.25rem !important;
+}
+
+.order-number {
+  margin-top: -10px;
+  color: black;
+}
+
+.image-1 {
+  width: 15px;
+  margin-left: 2px;
+}
+
+.image-2 {
+  width: 35px;
+  height: 28px;
+  margin-left: -8px;
+}

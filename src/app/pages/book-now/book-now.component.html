@@ -1,0 +1,834 @@
+<div role="main" class="main dashboard">
+  <div class="container-fluid">
+    <div class="row" style="height: 100vh">
+      <!-- side nav -->
+      <div class="col-2 py-3 bg-light">
+        <div class="logo my-4 ml-4 pb-3">
+          <img
+            src="assets/img/controls/logo-dashboard.svg"
+            width="150"
+            alt=""
+          />
+        </div>
+        <ul class="nav flex-column">
+            <li
+              class="nav-item py-1 px-2 d-flex flex-row justify-content-start rounded pl-4 mb-2"
+             
+            >
+              <img
+                src="assets/img/controls/windows.svg"
+                class="d-block"
+                alt=""
+              />
+              <a class="nav-link " href="#">Dashboard</a>
+            </li>
+            <li
+              class="nav-item py-1 px-2 d-flex flex-row justify-content-start rounded pl-4 mb-2"
+              style="background: var(--dashboard-bg);"
+            >
+              <img
+                src="assets/img/controls/sales-booking.svg"
+                class="d-block"
+                alt=""
+              />
+              <a class="nav-link active" href="#">Bookings</a>
+            </li>
+            <li
+              class="nav-item py-1 px-2 d-flex flex-row justify-content-start rounded pl-4 mb-2"
+            >
+              <img
+                src="assets/img/controls/make-orders.svg"
+                class="d-block"
+                alt=""
+              />
+              <a class="nav-link" href="#">Orders</a>
+            </li>
+  
+            <li
+              class="nav-item py-1 px-2 d-flex flex-row justify-content-start rounded pl-4 mb-2"
+            >
+              <img
+                src="assets/img/controls/locate.svg"
+                class="d-block"
+                alt=""
+              />
+              <a class="nav-link" href="#">Track orders</a>
+            </li>
+  
+            <li
+              class="nav-item py-1 px-2 d-flex flex-row justify-content-start rounded pl-4 mb-2"
+            >
+              <img
+                src="assets/img/controls/ionic-ios-card.svg"
+                class="d-block"
+                alt=""
+              />
+              <a class="nav-link" href="#">Cards</a>
+            </li>
+  
+            <li
+              class="nav-item py-1 px-2 d-flex flex-row justify-content-start rounded pl-4 "
+            >
+              <img
+                src="assets/img/controls/information-1.svg"
+                class="d-block"
+                alt=""
+              />
+              <a class="nav-link" href="#">help</a>
+            </li>
+          </ul>
+      </div>
+
+      <!-- main area -->
+      <div class="col-10">
+        <div class="container">
+          <!-- top navigation -->
+          <nav
+            class="navbar navbar-expand-lg navbar-light d-flex  my-2 py-4 mb-2"
+          >
+            <a
+              class="navbar-brand font-weight-bold flex-grow-1"
+              style="font-size: 30px; color: var(--heading-text-color);"
+              href="javascript:void(0)"
+              >Book Now</a
+            >
+            <button
+              hidden
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <form class="form-inline my-2 my-lg-0 w-100">
+                <input
+                  class="form-control w-75 mr-sm-3"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <span class="btn  my-2 my-sm-0" type="submit">
+                  <img
+                    src="assets/img/controls/notifications-bell.svg"
+                    alt="Notification bell"
+                  />
+                </span>
+              </form>
+            </div>
+
+            <div class="collapse navbar-collapse justify-content-end">
+              <div class="d-flex flex-column px-3">
+                <span
+                  class="font-weight-bold"
+                  style="color: var(--heading-text-color)"
+                  >Joshua Osazuwa</span
+                >
+                <small class="text-right" style="line-height: 14px"
+                  >Shipper</small
+                >
+              </div>
+              <div>
+                <img src="assets/img/controls/user-profile.svg" alt="" />
+              </div>
+            </div>
+          </nav>
+
+          <!--  show case area -->
+          <!-- <div
+                                class="row mx-auto rounded pt-4"
+                                style="background: var(--brighter-blue)"
+                              >
+                                <div class="col-12 d-flex mx-auto">
+                                  <div
+                                    class=" ml-4 mr-3"
+                                    style="transform: translate(0, -25px) scale(1.2)"
+                                  >
+                                    <img
+                                      src="assets/img/controls/school-bus-1.png"
+                                      width="100"
+                                      alt=""
+                                    />
+                                  </div>
+                                  <div class=" flex-grow-1 d-flex flex-column text-white pl-4">
+                                    <span
+                                      class="font-weight-bold"
+                                      style="font-size: 2rem; line-height: 43px "
+                                      >Welcome</span
+                                    >
+                                    <span>
+                                      Your Dashboard at a glance
+                                    </span>
+                                  </div>
+                                  <div class=" text-center w-25">
+                                    <a
+                                      class="btn w-50 mx-2 my-2 border-0 get-quote-btn text-white"
+                                      style="border-color: transparent; background-color: var(--modified-orange); font-size: 1.3rem"
+                                      href=""
+                                    >
+                                      Book
+                                    </a>
+                                  </div>
+                                </div>
+                              </div> -->
+
+          <!-- Summary  -->
+
+          <!-- <div class="row mt-3 mb-4 mx-auto">
+                                <div class="col-sm rounded bg-light mr-3 py-3 px-3">
+                                  <span class="small-title">Total earnings</span>
+                                  <h1 class="title font-weight-bold">
+                                    ₦ 194,000
+                                  </h1>
+                                </div>
+                                <div class="col-sm rounded bg-light mr-3 py-3 px-3">
+                                  <span class="small-title"> Total Trips</span>
+                                  <h1 class="title font-weight-bold">
+                                    230
+                                  </h1>
+                                </div>
+                                <div class="col-sm rounded bg-light mr-3 py-3 px-3">
+                                  <span class="small-title">Total Drivers</span>
+                                  <h1 class="title font-weight-bold">
+                                    5
+                                  </h1>
+                                </div>
+                                <div class="col-sm rounded bg-light py-3 px-3">
+                                  <span class="small-title">Vehicles</span>
+                                  <h1 class="title font-weight-bold">
+                                    4
+                                  </h1>
+                                </div>
+                              </div> -->
+
+          <!--  Book now area  -->
+          <!-- First stage -->
+          <div *ngIf="view == ''"  class="row bg-light mx-auto rounded px-5 py-5 position-relative">
+            <span class="position-absolute change-view" (click)="view = 'select-truck'">Change view</span>
+            <div
+              class=" col-12 d-flex justify-content-center align-items-center w-100 mb-5"
+            >
+              <div
+                class="circle-house d-flex flex-column justify-content-center align-items-center  mr-3 px-2"
+              >
+                <span class="circle position-relative"></span>
+                <span class="text-under-circle  text-center mt-2"
+                  >Select locations, date and time</span
+                >
+              </div>
+              <div
+                class="circle-house d-flex flex-column justify-content-center align-items-center  mr-3 px-2"
+              >
+                <span class="circle not-active  position-relative"></span>
+                <span class="text-under-circle text-center  mt-3"
+                  >Choose truck size</span
+                >
+              </div>
+              <div
+                class="circle-house d-flex flex-column justify-content-center align-items-center  mr-3 px-2"
+              >
+                <span class="circle not-active  position-relative"></span>
+                <span class="text-under-circle text-center mt-3"
+                  >Review Delivery fee</span
+                >
+              </div>
+              <div
+                class="circle-house d-flex flex-column justify-content-center align-items-center  mr-3 px-2"
+              >
+                <span class="circle not-active remove position-relative"></span>
+                <span class="text-under-circle text-center mt-2"
+                  >Make payment and place order</span
+                >
+              </div>
+            </div>
+
+            <div
+              class="col-12 d-flex flex-column justify-content-center align-items-center w-100 mt-3"
+            >
+              <h2 class="mb-1 text-center modified font-weight-bold">
+                Location, Date & Time
+              </h2>
+              <h6
+                class="text-center"
+                style="color: var( --modified-text-color); font-size: 14px;
+                font-weight: 300;
+                letter-spacing: 0.01rem;"
+              >
+                Select preferred truck
+              </h6>
+
+              <div class=" w-75">
+                <form>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label
+                        class="mb-0"
+                        style="color: var(--heading-text-color)"
+                        for="inputEmail4"
+                        >Pick-up Location
+                      </label>
+                      <input
+                        placeholder="Joshua"
+                        type="email"
+                        class="form-control"
+                        id="inputEmail4"
+                      />
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label
+                        class="mb-0"
+                        style="color: var(--heading-text-color)"
+                        for="inputPassword4"
+                        >Item Name</label
+                      >
+                      <input
+                        placeholder="Osazuwa"
+                        type="password"
+                        class="form-control"
+                        id="inputPassword4"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label
+                        class="mb-0"
+                        style="color: var( --heading-text-color)"
+                        for="inputState"
+                        >Drop-off Location</label
+                      >
+                      <input
+                        placeholder="Osazuwa"
+                        type="password"
+                        class="form-control"
+                        id="inputPassword4"
+                      />
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label
+                        class="mb-0"
+                        style="color: var(--heading-text-color)"
+                        for="inputPassword4"
+                        >Quantity
+                      </label>
+                      <select id="inputState" class="form-control">
+                        <option selected>KE 900 AAA</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label
+                        style="color: var(--heading-text-color)"
+                        for="inputState"
+                        >Pick-up Date</label
+                      >
+                      <select id="inputState" class="form-control">
+                        <option selected>21-09-2020</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label
+                        style="color: var(--heading-text-color)"
+                        for="inputPassword4"
+                        >Pick-up Time</label
+                      >
+                      <select id="inputState" class="form-control">
+                        <option selected>Select Time</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div
+                    class="d-flex w-100 justify-content-center align-items-center mt-4"
+                  >
+                    <button
+                      style="background: var(--modified-orange);"
+                      type="submit"
+                      class="btn  px-5 mr-5 text-white"
+                    >
+                      Back
+                    </button>
+                    <button
+                      style="background: #DEDEDE;"
+                      type="submit"
+                      class="btn text-white  px-5"
+                    >
+                      Next
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!-- second stage -->
+          <div *ngIf="view == 'select-truck'" class="row bg-light mx-auto rounded px-5 py-5 position-relative" >
+              <span class="position-absolute change-view" (click)="view = 'delivery-fee'">Change view</span>
+              <div
+                class=" col-12 d-flex justify-content-center align-items-center w-100 mb-5"
+              >
+                <div
+                  class="circle-house d-flex flex-column justify-content-center align-items-center  mr-3 px-2"
+                >
+                  <span class="circle active position-relative"></span>
+                  <span class="text-under-circle  text-center mt-2"
+                    >Select locations, date and time</span
+                  >
+                </div>
+                <div
+                  class="circle-house d-flex flex-column justify-content-center align-items-center  mr-3 px-2"
+                >
+                  <span class="circle   position-relative"></span>
+                  <span class="text-under-circle text-center  mt-3"
+                    >Choose truck size</span
+                  >
+                </div>
+                <div
+                  class="circle-house d-flex flex-column justify-content-center align-items-center  mr-3 px-2"
+                >
+                  <span class="circle not-active  position-relative"></span>
+                  <span class="text-under-circle text-center mt-3"
+                    >Review Delivery fee</span
+                  >
+                </div>
+                <div
+                  class="circle-house d-flex flex-column justify-content-center align-items-center  mr-3 px-2"
+                >
+                  <span class="circle not-active remove position-relative"></span>
+                  <span class="text-under-circle text-center mt-2"
+                    >Make payment and place order</span
+                  >
+                </div>
+              </div>
+  
+              <div
+                class="col-12 d-flex flex-column justify-content-center align-items-center w-100 mt-3"
+              >
+                <h2 class="mb-1 text-center modified font-weight-bold">
+                  Truck size
+                </h2>
+                <h6
+                  class="text-center"
+                  style="color: var( --modified-text-color); font-size: 14px;
+                  font-weight: 300;
+                  letter-spacing: 0.01rem;"
+                >
+                  Select preferred truck
+                </h6>
+  
+                <div class="w-100">
+                    <div class="row justify-content-center" style="margin-bottom: 4rem;">
+                      <div  class=" shadow col-2 border d-flex justify-content-start flex-column py-2 px-3 rounded mx-2">
+                          <div class="align-self-end">
+                            
+                                  <img src="assets/img/controls/selected-ok.svg" alt="">
+                             
+                          </div>
+
+                            <div style="transform: scaleX(1.3)" class="d-flex justify-content-center my-3">
+                              <img style="max-width: 70px; display: block;" src="assets/img/controls/open-back-small-truck.svg" alt="">
+                            </div>
+
+                            <div class="d-flex justify-content-start pl-3">
+                              <h5 class="heading-under-img" >Pickup Truck</h5>
+                            </div>
+
+                            <div class="">
+                                <span class="d-flex h-25  reduced-text" >
+                                    <i style="    font-size: 0.5rem;
+                                    margin: 5px 0 0 0;" class="fas fa-circle mr-2"></i>  Lorem ipsum dolo elit.
+                                </span>
+
+                                <span class="d-flex d-flex h-25  reduced-text ">
+                                    <i style="    font-size: 0.5rem;
+                                    margin: 5px 0 0 0;" class="fas fa-circle mr-2"></i>  Lorem ipsum dolo elit .
+                                </span>
+
+                                <span class="d-flex d-flex h-25  reduced-text">
+                                    <i style="    font-size: 0.5rem;
+                                    margin: 5px 0 0 0;" class="fas fa-circle mr-2"></i>  Lorem ipsum dolo elit .
+                                </span>
+                            </div>
+
+                      </div>
+                      <div class=" shadow col-2 border d-flex justify-content-start flex-column py-2 px-3 rounded mx-2">
+                          <div class="align-self-end">
+                            
+                                <img src="assets/img/controls/not-selected.svg" alt="">
+                             
+                          </div>
+
+                            <div style="transform: scaleX(1.3)" class="d-flex justify-content-center my-3">
+                              <img style="max-width: 70px; display: block;" src="assets/img/controls/open-back-long-truck.svg" alt="">
+                            </div>
+
+                            <div class="d-flex justify-content-start pl-3">
+                              <h5 class="heading-under-img" >Flatbed Truck</h5>
+                            </div>
+
+                            <div class="">
+                                <span class="d-flex h-25  reduced-text" >
+                                    <i style="    font-size: 0.5rem;
+                                    margin: 5px 0 0 0;" class="fas fa-circle mr-2"></i>  Lorem ipsum dolo elit.
+                                </span>
+
+                                <span class="d-flex d-flex h-25  reduced-text ">
+                                    <i style="    font-size: 0.5rem;
+                                    margin: 5px 0 0 0;" class="fas fa-circle mr-2"></i>  Lorem ipsum dolo elit .
+                                </span>
+
+                                <span class="d-flex d-flex h-25  reduced-text">
+                                    <i style="    font-size: 0.5rem;
+                                    margin: 5px 0 0 0;" class="fas fa-circle mr-2"></i>  Lorem ipsum dolo elit .
+                                </span>
+                            </div>
+
+                      </div>
+                      <div class=" shadow col-2 border d-flex justify-content-start flex-column py-2 px-3 rounded mx-2">
+                          <div class="align-self-end">
+                            
+                            <img src="assets/img/controls/not-selected.svg" alt="">
+                             
+                          </div>
+
+                            <div style="transform: scaleX(1.3)" class="d-flex justify-content-center my-3">
+                              <img style="max-width: 70px; display: block;" src="assets/img/controls/covered-back-small-truck.svg" alt="">
+                            </div>
+
+                            <div class="d-flex justify-content-start pl-3">
+                              <h5 class="heading-under-img" >Cargo Van</h5>
+                            </div>
+
+                            <div class="">
+                                <span class="d-flex h-25 align-items-center reduced-text">
+                                    <i style="    font-size: 0.5rem;
+                                    margin: 5px 0 0 0;" class="fas fa-circle mr-2"></i>  Lorem ipsum dolo elit.
+                                </span>
+
+                                <span class="d-flex d-flex h-25  reduced-text">
+                                    <i style="    font-size: 0.5rem;
+                                    margin: 5px 0 0 0;" class="fas fa-circle mr-2"></i>  Lorem ipsum dolo elit .
+                                </span>
+
+                                <span class="d-flex d-flex h-25  reduced-text">
+                                    <i style="    font-size: 0.5rem;
+                                    margin: 5px 0 0 0;" class="fas fa-circle mr-2"></i>  Lorem ipsum dolo elit .
+                                </span>
+                            </div>
+
+                      </div>
+                      <div class=" shadow col-2 border d-flex justify-content-start flex-column py-2 px-3 rounded mx-2">
+                          <div class="align-self-end">
+                            
+                            <img src="assets/img/controls/not-selected.svg" alt="">
+                             
+                          </div>
+
+                            <div style="transform: scaleX(1.3)" class="d-flex justify-content-center my-3">
+                              <img style="max-width: 70px; display: block;" src="assets/img/controls/covered-back-large-truck.svg" alt="">
+                            </div>
+
+                            <div class="d-flex justify-content-start pl-3">
+                              <h5 class="heading-under-img" >Cooling Truck</h5>
+                            </div>
+
+                            <div class="">
+                                <span class="d-flex h-25  reduced-text" >
+                                    <i style="    font-size: 0.5rem;
+                                    margin: 5px 0 0 0;" class="fas fa-circle mr-2"></i>  Lorem ipsum dolo elit.
+                                </span>
+
+                                <span class="d-flex d-flex h-25  reduced-text">
+                                    <i style="    font-size: 0.5rem;
+                                    margin: 5px 0 0 0;" class="fas fa-circle mr-2"></i>  Lorem ipsum dolo elit .
+                                </span>
+
+                                <span class="d-flex d-flex h-25  reduced-text">
+                                    <i style="    font-size: 0.5rem;
+                                    margin: 5px 0 0 0;" class="fas fa-circle mr-2"></i>  Lorem ipsum dolo elit .
+                                </span>
+                            </div>
+
+                      </div>
+                      <div class=" shadow col-2 border d-flex justify-content-start flex-column py-2 px-3 rounded mx-2 position-relative">
+                          <div class="d-flex w-100 justify-content-between">
+                            
+                              <span style="background: #BEBABA; font-size: 10px; height: 25px;" class="px-1 text-white rounded w-50 text-center text-capitalize">unavailable</span>   
+                               <img src="assets/img/controls/not-selected.svg" alt="">
+                             
+                          </div>
+
+                            <div style="transform: scaleX(1.3)" class="d-flex justify-content-center my-3">
+                              <img style="max-width: 70px; display: block;" src="assets/img/controls/tipper.svg" alt="">
+                            </div>
+
+                            <div class="d-flex justify-content-start pl-3">
+                              <h5 class="heading-under-img" > Truck</h5>
+                            </div>
+
+                            <div class="">
+                                <span class="d-flex h-25  reduced-text" >
+                                    <i style="    font-size: 0.5rem;
+                                    margin: 5px 0 0 0;" class="fas fa-circle mr-2"></i>  Lorem ipsum dolo elit.
+                                </span>
+
+                                <span class="d-flex d-flex h-25  reduced-text">
+                                    <i style=" font-size: 0.5rem;
+                                    margin: 5px 0 0 0;" class="fas fa-circle mr-2"></i>  Lorem ipsum dolo elit .
+                                </span>
+
+                                <span class="d-flex d-flex h-25  reduced-text">
+                                    <i style="    font-size: 0.5rem;
+                                    margin: 5px 0 0 0;" class="fas fa-circle mr-2"></i>  Lorem ipsum dolo elit .
+                                </span>
+                            </div>
+                            <div class="my-overlay position-absolute"></div>
+                      </div>
+                    </div>
+                </div>
+
+                <div
+                    class="d-flex w-100 justify-content-center align-items-center"
+                  >
+                    <button
+                      style="background: var(--modified-orange);"
+                      type="submit"
+                      class="btn  px-5 mr-5 text-white"
+                    >
+                      Back
+                    </button>
+                    <button
+                      style="background: var(--brighter-blue);"
+                      type="submit"
+                      class="btn text-white  px-5"
+                    >
+                      Next
+                    </button>
+                  </div>
+              </div>
+          </div>
+
+
+            <!-- third stage -->
+            <div *ngIf="view == 'delivery-fee'" class="row bg-light mx-auto rounded px-5 py-5 position-relative" >
+              <span class="position-absolute change-view" (click)="view = 'make-payment'">Change view</span>
+              <div
+                class=" col-12 d-flex justify-content-center align-items-center w-100 mb-5"
+              >
+                <div
+                  class="circle-house d-flex flex-column justify-content-center align-items-center  mr-3 px-2"
+                >
+                  <span class="circle active position-relative"></span>
+                  <span class="text-under-circle  text-center mt-2"
+                    >Select locations, date and time</span
+                  >
+                </div>
+                <div
+                  class="circle-house d-flex flex-column justify-content-center align-items-center  mr-3 px-2"
+                >
+                  <span class="circle active  position-relative"></span>
+                  <span class="text-under-circle text-center  mt-3"
+                    >Choose truck size</span
+                  >
+                </div>
+                <div
+                  class="circle-house d-flex flex-column justify-content-center align-items-center  mr-3 px-2"
+                >
+                  <span class="circle   position-relative"></span>
+                  <span class="text-under-circle text-center mt-3"
+                    >Review Delivery fee</span
+                  >
+                </div>
+                <div
+                  class="circle-house d-flex flex-column justify-content-center align-items-center  mr-3 px-2"
+                >
+                  <span class="circle not-active remove position-relative"></span>
+                  <span class="text-under-circle text-center mt-2"
+                    >Make payment and place order</span
+                  >
+                </div>
+              </div>
+  
+              <div
+                class="col-12 d-flex flex-column justify-content-center align-items-center w-100 mt-3"
+              >
+                <h2 class="mb-1 text-center modified font-weight-bold">
+                  Delivery fee
+                </h2>
+                <h6
+                  class="text-center"
+                  style="color: var( --modified-text-color); font-size: 14px;
+                  font-weight: 300;
+                  letter-spacing: 0.01rem;"
+                >
+                  lorem ipsum
+                </h6>
+  
+                <div class="w-100 row px-5 mb-3  justify-content-center" >
+                    <div class=" col-sm py-5 ">
+                      
+                        <p class="booking_details"> 
+                            <span class="">Pick up location</span> 
+                            <span> 25B Gerrard Road, Ikoyi Lagos</span>
+                        </p>
+                        <p class="booking_details">
+                            <span class="">Drop off location</span> 
+                            <span> 25 Peaceland Estate, Majek, Lekki-Epe...</span>
+                        </p>
+                        <p class="booking_details">
+                            <span class="">Distance</span> 
+                            <span style="font-size: 16px;"> 25.6km</span>
+                        </p>
+                    </div>
+                    <div class=" col-sm d-flex justify-content-center align-items-center text-center ">
+                      <span class="total_deliveryfree px-5 py-5 colored-background">
+                        NGN 35,098
+                      </span>
+                    </div>
+                </div>
+
+                <div
+                    class="d-flex w-100 justify-content-center align-items-center"
+                  >
+                    <button
+                      style="background: var(--modified-orange);"
+                      type="submit"
+                      class="btn  px-5 mr-5 text-white"
+                    >
+                      Back
+                    </button>
+                    <button
+                      style="background: var(--brighter-blue);"
+                      type="submit"
+                      class="btn text-white  px-5"
+                    >
+                      Next
+                    </button>
+                  </div>
+              </div>
+          </div>
+
+          <!-- fourth stage -->
+
+          <div *ngIf="view == 'make-payment'" class="row bg-light mx-auto rounded px-5 py-5 position-relative" >
+              <span class="position-absolute change-view">Change view</span>
+              <div
+                class=" col-12 d-flex justify-content-center align-items-center w-100 mb-5"
+              >
+                <div
+                  class="circle-house d-flex flex-column justify-content-center align-items-center  mr-3 px-2"
+                >
+                  <span class="circle active position-relative"></span>
+                  <span class="text-under-circle  text-center mt-2"
+                    >Select locations, date and time</span
+                  >
+                </div>
+                <div
+                  class="circle-house d-flex flex-column justify-content-center align-items-center  mr-3 px-2"
+                >
+                  <span class="circle active  position-relative"></span>
+                  <span class="text-under-circle text-center  mt-3"
+                    >Choose truck size</span
+                  >
+                </div>
+                <div
+                  class="circle-house d-flex flex-column justify-content-center align-items-center  mr-3 px-2"
+                >
+                  <span class="circle active  position-relative"></span>
+                  <span class="text-under-circle text-center mt-3"
+                    >Review Delivery fee</span
+                  >
+                </div>
+                <div
+                  class="circle-house d-flex flex-column justify-content-center align-items-center  mr-3 px-2"
+                >
+                  <span class="circle remove position-relative"></span>
+                  <span class="text-under-circle text-center mt-2"
+                    >Make payment and place order</span
+                  >
+                </div>
+              </div>
+  
+              <div
+                class="col-12 d-flex flex-column justify-content-center align-items-center w-100 mt-3"
+              >
+                <h2 class="mb-1 text-center modified font-weight-bold">
+                    Make Payment
+                </h2>
+                <h6
+                  class="text-center"
+                  style="color: var( --modified-text-color); font-size: 14px;
+                  font-weight: 300;
+                  letter-spacing: 0.01rem;"
+                >
+                Choose payment card to proceed
+                </h6>
+  
+                <div class="w-50 row mx-auto px-3 pb-5 mb-3  justify-content-center" >
+                    <div class="col-12 px-5 d-flex flex-column justify-content-center">
+                       <div class="w-100 text-center mb-2 py-2 rounded " style="background: var(--dull-background);">
+                         
+                         <span class="d-inline mr-4"> <img src="assets/img/controls/square-not-selected.svg" alt=""> </span>
+                         <span class="d-inline mr-3"> <img src="assets/img/controls/MASTER.svg" alt=""> </span>
+                         <span class="d-inline"> 4657 **** **** 7473 </span>
+                       </div>
+
+                      
+
+                        
+
+                    </div>
+                    <div class="col-12 px-5 d-flex flex-column justify-content-center">
+                        <div class="w-100 text-center mb-2 py-2 rounded" style="background: var(--dull-background);">
+                         
+                            <span class="d-inline mr-3"> <img src="assets/img/controls/square-selected.svg" alt=""> </span>
+                            <span class="d-inline mr-3"> <img src="assets/img/controls/VISA.svg" alt=""> </span>
+                            <span class="d-inline"> 4657 **** **** 7473 </span>
+                          </div>
+                    </div>
+
+                    <div class="col-12 px-5 d-flex flex-column justify-content-center">
+                        <button class="btn btn-block btn-outline-primary text-center">
+                            Add new card
+
+                        </button>
+                    </div>
+                    
+                </div>
+
+                <div
+                    class="d-flex w-100 justify-content-center align-items-center"
+                  >
+                    <button
+                      style="background: var(--modified-orange);"
+                      type="submit"
+                      class="btn  px-5 mr-5 text-white"
+                    >
+                      Back
+                    </button>
+                    <button
+                      style="background: var(--brighter-blue);"
+                      type="submit"
+                      class="btn text-white  px-5"
+                    >
+                      Next
+                    </button>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

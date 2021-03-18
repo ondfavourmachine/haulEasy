@@ -1,0 +1,8 @@
+.options {
+  color: var(--heading-text-color) !important;
+  font-size: 0.7rem;
+}
+
+.dots {
+  left: 0;
+}

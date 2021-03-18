@@ -1,0 +1,347 @@
+<div role="main" class="main dashboard">
+  <div class="container-fluid">
+    <div class="row" style="height: 100vh">
+      <!-- side nav -->
+      <div class="col-2 py-3 bg-light">
+        <div class="logo my-4 ml-4 pb-3">
+          <img
+            src="assets/img/controls/logo-dashboard.svg"
+            width="150"
+            alt=""
+          />
+        </div>
+        <ul class="nav flex-column">
+          <li
+            class="nav-item py-1 px-2 d-flex flex-row justify-content-start rounded pl-4 mb-2"
+            style="background: var(--dashboard-bg);"
+          >
+            <img src="assets/img/controls/windows.svg" class="d-block" alt="" />
+            <a class="nav-link active" href="#">Dashboard</a>
+          </li>
+          <li
+            class="nav-item py-1 px-2 d-flex flex-row justify-content-start rounded pl-4 mb-2"
+          >
+            <img
+              src="assets/img/controls/sales-booking.svg"
+              class="d-block"
+              alt=""
+            />
+            <a class="nav-link" href="#">Bookings</a>
+          </li>
+          <li
+            class="nav-item py-1 px-2 d-flex flex-row justify-content-start rounded pl-4 mb-2"
+          >
+            <img
+              src="assets/img/controls/make-orders.svg"
+              class="d-block"
+              alt=""
+            />
+            <a class="nav-link" href="#">Orders</a>
+          </li>
+
+          <li
+            class="nav-item py-1 px-2 d-flex flex-row justify-content-start rounded pl-4 mb-2"
+          >
+            <img src="assets/img/controls/locate.svg" class="d-block" alt="" />
+            <a class="nav-link" href="#">Track orders</a>
+          </li>
+
+          <li
+            class="nav-item py-1 px-2 d-flex flex-row justify-content-start rounded pl-4 mb-2"
+          >
+            <img
+              src="assets/img/controls/ionic-ios-card.svg"
+              class="d-block"
+              alt=""
+            />
+            <a class="nav-link" href="#">Cards</a>
+          </li>
+
+          <li
+            class="nav-item py-1 px-2 d-flex flex-row justify-content-start rounded pl-4 "
+          >
+            <img
+              src="assets/img/controls/information-1.svg"
+              class="d-block"
+              alt=""
+            />
+            <a class="nav-link" href="#">help</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- main area -->
+      <div class="col-10">
+        <div class="container">
+          <!-- top navigation -->
+          <nav
+            class="navbar navbar-expand-lg navbar-light d-flex  my-2 py-4 mb-2"
+          >
+            <a
+              class="navbar-brand font-weight-bold flex-grow-1"
+              style="font-size: 30px; color: var(--heading-text-color);"
+              href="javascript:void(0)"
+              >Cards</a
+            >
+            <button
+              hidden
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <form class="form-inline my-2 my-lg-0 w-100">
+                <input
+                  class="form-control w-75 mr-sm-3"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <span class="btn  my-2 my-sm-0" type="submit">
+                  <img
+                    src="assets/img/controls/custom-notification-2.svg"
+                    alt="Notification bell"
+                  />
+                </span>
+              </form>
+            </div>
+
+            <div class="collapse navbar-collapse justify-content-end">
+              <div class="d-flex flex-column px-3">
+                <span
+                  class="font-weight-bold"
+                  style="color: var(--heading-text-color)"
+                  >Joshua Osazuwa</span
+                >
+                <small class="text-right" style="line-height: 14px"
+                  >Shipper</small
+                >
+              </div>
+              <div>
+                <img src="assets/img/controls/user-profile.svg" alt="" />
+              </div>
+            </div>
+          </nav>
+
+          <div class="row py-2 pl-4 mb-2">
+            <button (click)="addCard()" class="btn btn-primary px-5">
+              Add New Card
+            </button>
+          </div>
+
+          <!--  Orders area -->
+          <div class="row mx-auto rounded px-2 py-3">
+            <div class="col-4 rounded master-card mr-3 mb-5 position-relative">
+              <div
+                class=" d-flex justify-content-between align-items-center pt-5 px-2 text-white mb-3"
+              >
+                <span class="number"> 4657</span>
+                <span class="number">****</span>
+                <span class="number">****</span>
+                <span class="number">7473</span>
+              </div>
+
+              <div class="text-white px-2">
+                <small class="d-block duration-text">VALID THRU</small>
+                <small class="d-block duration" style="font-size: 13px"
+                  >10/20</small
+                >
+              </div>
+              <div class="text-white text-left px-2 mb-3">
+                <small class="d-block duration">JOSHUA OSAZUWA</small>
+              </div>
+              <span class="position-absolute arrangement"
+                ><img src="assets/img/controls/big-master.svg" alt=""
+              /></span>
+            </div>
+            <div class="col-4 rounded visa-card mb-5 position-relative">
+              <div
+                class=" d-flex justify-content-between align-items-center pt-5 px-2  text-white mb-3"
+              >
+                <span class="number"> 4657</span>
+                <span class="number">****</span>
+                <span class="number">****</span>
+                <span class="number">7473</span>
+              </div>
+
+              <div class="text-white px-2">
+                <small class="d-block duration-text">VALID THRU</small>
+                <small class="d-block duration" style="font-size: 13px"
+                  >10/20</small
+                >
+              </div>
+              <div class="text-white text-left px-2 mb-3">
+                <small class="d-block duration">JOSHUA OSAZUWA</small>
+              </div>
+              <span class="position-absolute arrangement"
+                ><img src="assets/img/controls/big-visa.svg" alt=""
+              /></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Button trigger modal -->
+<button
+  type="button"
+  hidden
+  class="btn btn-primary card-target"
+  data-toggle="modal"
+  data-target="#exampleModal"
+>
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content rounded">
+      <!-- <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div> -->
+      <div class="modal-body more-padding">
+        <h4
+          class="text-center"
+          style="color: var(--heading-text-color); font-size: 18px;"
+        >
+          Add New Card
+        </h4>
+        <h6 class="text-center mb-3" style="color: var(--modified-text-color);">
+          Please enter your card details
+        </h6>
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-8">
+              <label style="color: var(--another-blue)" for="inputEmail4"
+                >Card Number</label
+              >
+              <input
+                placeholder="1234 5678 3456 2456"
+                type="email"
+                class="form-control"
+                id="inputEmail4"
+                style="border-color: var(--heading-text-color)"
+              />
+            </div>
+            <div class="form-group col-md-4 position-relative">
+              <label style="opacity: 0;" for="inputEmail4">Card Number</label>
+              <input
+                placeholder=""
+                type="email"
+                class="form-control "
+                id="inputEmail4"
+                style="border-color: var(--heading-text-color)"
+              />
+              <img
+                style="top: 42px;
+                left: 21%;"
+                class="position-absolute"
+                src="assets/img/controls/big-blue-VISA.svg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label style="color: var(--another-blue)" for="inputEmail4"
+                >Cardholder Name</label
+              >
+              <input
+                placeholder="Enter name"
+                type="email"
+                class="form-control"
+                id="inputEmail4"
+              />
+            </div>
+            <!-- <div class="form-group col-md-6">
+              <label
+                style="color: var(--heading-text-color)"
+                for="inputPassword4"
+                >Assign Vehicle</label
+              >
+              <select id="inputState" class="form-control">
+                <option selected>KE 900 AAA</option>
+                <option>...</option>
+              </select>
+            </div> -->
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label
+                style="color: var(--heading-text-color)"
+                for="inputPassword4"
+                >Expiry Date</label
+              >
+              <select id="inputState" class="form-control">
+                <option selected>05/21</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="form-group col-md-6">
+              <label style="color: var(--another-blue)" for="inputEmail4"
+                >CVV</label
+              >
+              <input
+                placeholder="123"
+                type="email"
+                class="form-control"
+                id="inputEmail4"
+              />
+            </div>
+          </div>
+
+          <div
+            class="d-flex w-100 justify-content-center align-items-center mt-4"
+          >
+            <button
+              style="background: var(--heading-text-color);"
+              type="submit"
+              class="btn  px-5 mr-3 text-white"
+            >
+              Save
+            </button>
+            <button
+              style="background: #DEDEDE;"
+              type="submit"
+              class="btn text-white"
+            >
+              Cancel
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer" hidden>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+          Close
+        </button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>

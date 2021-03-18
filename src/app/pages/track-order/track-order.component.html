@@ -1,0 +1,303 @@
+<div role="main" class="main dashboard">
+  <div class="container-fluid">
+    <div class="row" style="height: 100vh">
+      <!-- side nav -->
+      <div class="col-2 py-3 bg-light">
+        <div class="logo my-4 ml-4 pb-3">
+          <img
+            src="assets/img/controls/logo-dashboard.svg"
+            width="150"
+            alt=""
+          />
+        </div>
+        <ul class="nav flex-column">
+          <li
+            class="nav-item py-1 px-2 d-flex flex-row justify-content-start rounded pl-4 mb-2"
+            style="background: var(--dashboard-bg);"
+          >
+            <img src="assets/img/controls/windows.svg" class="d-block" alt="" />
+            <a class="nav-link active" href="#">Dashboard</a>
+          </li>
+          <li
+            class="nav-item py-1 px-2 d-flex flex-row justify-content-start rounded pl-4 mb-2"
+          >
+            <img
+              src="assets/img/controls/sales-booking.svg"
+              class="d-block"
+              alt=""
+            />
+            <a class="nav-link" href="#">Bookings</a>
+          </li>
+          <li
+            class="nav-item py-1 px-2 d-flex flex-row justify-content-start rounded pl-4 mb-2"
+          >
+            <img
+              src="assets/img/controls/make-orders.svg"
+              class="d-block"
+              alt=""
+            />
+            <a class="nav-link" href="#">Orders</a>
+          </li>
+
+          <li
+            class="nav-item py-1 px-2 d-flex flex-row justify-content-start rounded pl-4 mb-2"
+          >
+            <img src="assets/img/controls/locate.svg" class="d-block" alt="" />
+            <a class="nav-link" href="#">Track orders</a>
+          </li>
+
+          <li
+            class="nav-item py-1 px-2 d-flex flex-row justify-content-start rounded pl-4 mb-2"
+          >
+            <img
+              src="assets/img/controls/ionic-ios-card.svg"
+              class="d-block"
+              alt=""
+            />
+            <a class="nav-link" href="#">Cards</a>
+          </li>
+
+          <li
+            class="nav-item py-1 px-2 d-flex flex-row justify-content-start rounded pl-4 "
+          >
+            <img
+              src="assets/img/controls/information-1.svg"
+              class="d-block"
+              alt=""
+            />
+            <a class="nav-link" href="#">help</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- main area -->
+      <div class="col-10">
+        <div class="container">
+          <!-- top navigation -->
+          <nav
+            class="navbar navbar-expand-lg navbar-light d-flex  my-2 py-4 mb-2"
+          >
+            <a
+              class="navbar-brand font-weight-bold flex-grow-1"
+              style="font-size: 30px; color: var(--heading-text-color);"
+              href="javascript:void(0)"
+              >Track Order</a
+            >
+            <button
+              hidden
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <form class="form-inline my-2 my-lg-0 w-100">
+                <input
+                  class="form-control w-75 mr-sm-3"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <span class="btn  my-2 my-sm-0" type="submit">
+                  <img
+                    src="assets/img/controls/custom-notification-2.svg"
+                    alt="Notification bell"
+                  />
+                </span>
+              </form>
+            </div>
+
+            <div class="collapse navbar-collapse justify-content-end">
+              <div class="d-flex flex-column px-3">
+                <span
+                  class="font-weight-bold"
+                  style="color: var(--heading-text-color)"
+                  >Joshua Osazuwa</span
+                >
+                <small class="text-right" style="line-height: 14px"
+                  >Shipper</small
+                >
+              </div>
+              <div>
+                <img src="assets/img/controls/user-profile.svg" alt="" />
+              </div>
+            </div>
+          </nav>
+
+          <!--  show case area -->
+
+          <!-- Summary  -->
+
+          <!-- <div class="row py-2 pl-4 mb-2">
+            <button (click)="addDriver()" class="btn btn-primary px-5">
+              Add Driver
+            </button>
+          </div> -->
+
+          <!--  Orders area -->
+          <div
+            class="row bg-light mx-auto rounded px-5 py-5"
+            style="height: 600px;"
+          >
+            <div class="col-12">
+              <div class="row w-75 mx-auto px-5 py-5">
+                <div
+                  class="col-12 d-flex mb-lg-5 bg-orange track"
+                  style="padding: 2rem 2.3rem;"
+                >
+                  <div style="width: 70%" class=" mr-3">
+                    <input
+                      type="text"
+                      placeholder="Enter Order ID"
+                      style="height: 50px"
+                      class="form-control cover-input rounded"
+                    />
+                  </div>
+
+                  <div style="width: 30%" class="">
+                    <button
+                      style=""
+                      class="btn btn-info btn-block rounded sendBtn"
+                    >
+                      Send
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Button trigger modal -->
+<button
+  type="button"
+  hidden
+  class="btn btn-primary target"
+  data-toggle="modal"
+  data-target="#exampleModal"
+>
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <!-- <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div> -->
+      <div class="modal-body more-padding">
+        <h4 class="text-center" style="color: var(--heading-text-color);">
+          Add Driver
+        </h4>
+        <h6 class="text-center mb-3" style="color: var(--modified-text-color);">
+          Please enter correct details of your driver
+        </h6>
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label
+                style="color: var(--darker-heading-text-color)"
+                for="inputEmail4"
+                >First Name</label
+              >
+              <input
+                placeholder="Joshua"
+                type="email"
+                class="form-control"
+                id="inputEmail4"
+              />
+            </div>
+            <div class="form-group col-md-6">
+              <label
+                style="color: var(--darker-heading-text-color)"
+                for="inputPassword4"
+                >Last Name</label
+              >
+              <input
+                placeholder="Osazuwa"
+                type="password"
+                class="form-control"
+                id="inputPassword4"
+              />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label
+                style="color: var(--darker-heading-text-color)"
+                for="inputState"
+                >Driving Experience</label
+              >
+              <select id="inputState" class="form-control">
+                <option selected>123</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="form-group col-md-6">
+              <label
+                style="color: var(--darker-heading-text-color)"
+                for="inputPassword4"
+                >Assign Vehicle</label
+              >
+              <select id="inputState" class="form-control">
+                <option selected>KE 900 AAA</option>
+                <option>...</option>
+              </select>
+            </div>
+          </div>
+
+          <div
+            class="d-flex w-100 justify-content-center align-items-center mt-4"
+          >
+            <button
+              style="background: var(--heading-text-color);"
+              type="submit"
+              class="btn  px-5 mr-3 text-white"
+            >
+              Save
+            </button>
+            <button
+              style="background: #DEDEDE;"
+              type="submit"
+              class="btn text-white"
+            >
+              Cancel
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer" hidden>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+          Close
+        </button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>

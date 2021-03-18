@@ -1,0 +1,43 @@
+.caption h1, .caption p{
+  color: #2C272E !important;
+}
+.caption h1 span{
+  font-weight: lighter;
+}
+html .bg-color-dark-scale-2{
+  background-color: #1D75BC !important;
+}
+.bg-color-dark-scale-2.box h4, .bg-color-dark-scale-2.box p{
+  color: #FFFFFF !important;
+}
+.board{
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px 80px;
+}
+.footer div h5{
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+
+}
+.footer div p, .footer div p .footer-links{
+  font-size: 15px ;
+  color: #fff !important;
+}
+h4.custom-font-size-3{
+  color: #EE5A2B !important;
+}
+@media (max-width: 991px) {
+  .board{
+    padding: 30px 10px !important;
+    margin: 100px 20px !important;
+  }
+  .board div h1{
+    font-size: 34px !important;
+  }
+  .board div p{
+    font-size: 16px !important;
+  }
+
+}

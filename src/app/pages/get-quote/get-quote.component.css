@@ -1,0 +1,39 @@
+
+.cover-bg{
+  display: flex;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 6px;
+}
+.cover-input{
+  flex-grow: 1;
+  height: 100%;
+  margin: 5px 0px;
+  border: 0px;
+}
+.cover-send-btn{
+  padding: 10px 30px;
+
+}
+.dropdown-item {
+  padding: 0px !important
+}
+.dropdown:hover .dropdown-toggle {
+  border-bottom: 1px solid #F89521;
+  color: #fff !important;
+}
+html .bg-blue{
+  background-color: #008BCC !important;
+
+}
+label{
+  font-size: 13px;
+  font-weight: bold
+}
+
+@media (max-width: 991px) {
+  h2, p{
+    text-align: center;
+  }
+}
+

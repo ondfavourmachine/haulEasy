@@ -1,0 +1,36 @@
+.master-card {
+  background: url(../../../assets/img/controls/blue-rectangle.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.visa-card {
+  background: url(../../../assets/img/controls/orange-rectangle.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.duration-text {
+  font-size: 30%;
+  line-height: 1;
+  font-weight: 200;
+  font-family: "Consolas";
+}
+
+.duration {
+  font-family: "Consolas";
+  font-size: 15px;
+  text-shadow: 0.5px 0.87px 3px #0000001a;
+}
+
+.number {
+  letter-spacing: 0.95px;
+  font-weight: bold;
+  font-family: "Consolas";
+  font-size: 19px;
+}
+
+.arrangement{
+  bottom: 11%;
+  right: 6%;
+}

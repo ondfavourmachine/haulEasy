@@ -1,0 +1,427 @@
+<div role="main" class="main dashboard">
+  <div class="container-fluid">
+    <div class="row" style="height: 100vh">
+      <!-- side nav -->
+      <div class="col-2 py-3 bg-light">
+        <div class="logo my-4 ml-4 pb-3">
+          <img
+            src="assets/img/controls/logo-dashboard.svg"
+            width="150"
+            alt=""
+          />
+        </div>
+        <ul class="nav flex-column">
+          <li
+            class="nav-item py-1 px-2 d-flex flex-row justify-content-start rounded pl-4 mb-2"
+          >
+            <img
+              src="assets/img/controls/dashboard-icon.svg"
+              class="d-block"
+              alt=""
+            />
+            <a class="nav-link " href="#">Dashboard</a>
+          </li>
+          <li
+            class="nav-item py-1 px-2 d-flex flex-row justify-content-start rounded pl-4 mb-2"
+          >
+            <img
+              src="assets/img/controls/bookings-tag.svg"
+              class="d-block"
+              alt=""
+            />
+            <a class="nav-link" href="#">Bookings</a>
+          </li>
+          <li
+            class="nav-item py-1 px-2 d-flex flex-row justify-content-start rounded pl-4 mb-2"
+            style="background: var(--dashboard-bg);"
+          >
+            <img
+              src="assets/img/controls/delivery-bus.svg"
+              class="d-block"
+              alt=""
+            />
+            <a class="nav-link active" href="#">Orders</a>
+          </li>
+
+          <li
+            class="nav-item py-1 px-2 d-flex flex-row justify-content-start rounded pl-4 mb-2"
+          >
+            <img
+              src="assets/img/controls/tracking.svg"
+              class="d-block"
+              alt=""
+            />
+            <a class="nav-link" href="#">Track orders</a>
+          </li>
+
+          <li
+            class="nav-item py-1 px-2 d-flex flex-row justify-content-start rounded pl-4 mb-2"
+          >
+            <img
+              src="assets/img/controls/credit-card-1.svg"
+              class="d-block"
+              alt=""
+            />
+            <a class="nav-link" href="#">Cards</a>
+          </li>
+
+          <li
+            class="nav-item py-1 px-2 d-flex flex-row justify-content-start rounded pl-4 "
+          >
+            <img
+              src="assets/img/controls/information-1.svg"
+              class="d-block"
+              alt=""
+            />
+            <a class="nav-link" href="#">help</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- main area -->
+      <div class="col-10">
+        <div class="container">
+          <!-- top navigation -->
+          <nav
+            class="navbar navbar-expand-lg navbar-light d-flex  my-2 py-4 mb-2"
+          >
+            <a
+              class="navbar-brand font-weight-bold flex-grow-1"
+              style="font-size: 30px; color: var(--heading-text-color);"
+              href="javascript:void(0)"
+              >Orders</a
+            >
+            <button
+              hidden
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <form class="form-inline my-2 my-lg-0 w-100">
+                <input
+                  class="form-control w-75 mr-sm-3"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <span class="btn  my-2 my-sm-0" type="submit">
+                  <img
+                    src="assets/img/controls/custom-notification-2.svg"
+                    alt="Notification bell"
+                  />
+                </span>
+              </form>
+            </div>
+
+            <div class="collapse navbar-collapse justify-content-end">
+              <div class="d-flex flex-column px-3">
+                <span
+                  class="font-weight-bold"
+                  style="color: var(--heading-text-color)"
+                  >Joshua Osazuwa</span
+                >
+                <small class="text-right" style="line-height: 14px"
+                  >Shipper</small
+                >
+              </div>
+              <div>
+                <img src="assets/img/controls/user-profile.svg" alt="" />
+              </div>
+            </div>
+          </nav>
+
+          <!--  show case area -->
+          <!-- <div
+              class="row mx-auto rounded pt-4"
+              style="background: var(--brighter-blue)"
+            >
+              <div class="col-12 d-flex mx-auto">
+                <div
+                  class=" ml-4 mr-3"
+                  style="transform: translate(0, -25px) scale(1.2)"
+                >
+                  <img
+                    src="assets/img/controls/school-bus-1.png"
+                    width="100"
+                    alt=""
+                  />
+                </div>
+                <div class=" flex-grow-1 d-flex flex-column text-white pl-4">
+                  <span
+                    class="font-weight-bold"
+                    style="font-size: 2rem; line-height: 43px "
+                    >Welcome</span
+                  >
+                  <span>
+                    Your Dashboard at a glance
+                  </span>
+                </div>
+                <div class=" text-center w-25">
+                  <a
+                    class="btn w-50 mx-2 my-2 border-0 get-quote-btn text-white"
+                    style="border-color: transparent; background-color: var(--modified-orange); font-size: 1.3rem"
+                    href=""
+                  >
+                    Book
+                  </a>
+                </div>
+              </div>
+            </div> -->
+
+          <!-- Summary  -->
+
+          <!-- <div class="row mt-3 mb-4 mx-auto">
+              <div class="col-sm rounded bg-light mr-3 py-3 px-3">
+                <span class="small-title">Total earnings</span>
+                <h1 class="title font-weight-bold">
+                  ₦ 194,000
+                </h1>
+              </div>
+              <div class="col-sm rounded bg-light mr-3 py-3 px-3">
+                <span class="small-title"> Total Trips</span>
+                <h1 class="title font-weight-bold">
+                  230
+                </h1>
+              </div>
+              <div class="col-sm rounded bg-light mr-3 py-3 px-3">
+                <span class="small-title">Total Drivers</span>
+                <h1 class="title font-weight-bold">
+                  5
+                </h1>
+              </div>
+              <div class="col-sm rounded bg-light py-3 px-3">
+                <span class="small-title">Vehicles</span>
+                <h1 class="title font-weight-bold">
+                  4
+                </h1>
+              </div>
+            </div> -->
+
+          <!--  Orders area -->
+          <div
+            class="row bg-light mx-auto rounded px-4"
+            *ngIf="view == 'table'"
+          >
+            <div class="mb-1 py-2 w-100 d-flex">
+              <span
+                class="flex-grow-1 py-1 start"
+                style="color: var(--modified-text-color); font-size: 1.3rem;"
+                >Your Orders</span
+              >
+              <span class="px-3 py-1">
+                <small hidden class="options">View more </small>
+              </span>
+              <span class="px-3 py-1">
+                <small (click)="view = 'cards'" class="options">
+                  Change view
+                </small>
+              </span>
+            </div>
+            <table class="table">
+              <thead class="thead-light">
+                <tr class="px-2">
+                  <th
+                    scope="col"
+                    style=" background: var(--dashboard-bg); border-color: transparent"
+                  >
+                    <input type="checkbox" />
+                  </th>
+                  <th
+                    scope="col"
+                    style=" background: var(--dashboard-bg); border-color: transparent"
+                  >
+                    Order ID
+                  </th>
+                  <th
+                    scope="col"
+                    style=" background: var(--dashboard-bg); border-color: transparent"
+                  >
+                    Date
+                  </th>
+                  <th
+                    scope="col"
+                    style=" background: var(--dashboard-bg); border-color: transparent"
+                  >
+                    Driver
+                  </th>
+                  <th
+                    scope="col"
+                    style=" background: var(--dashboard-bg); border-color: transparent"
+                  >
+                    Vehicle
+                  </th>
+                  <th
+                    scope="col"
+                    style=" background: var(--dashboard-bg); border-color: transparent"
+                  >
+                    Licence Plate
+                  </th>
+                  <th
+                    scope="col"
+                    style=" background: var(--dashboard-bg); border-color: transparent"
+                  >
+                    Amount
+                  </th>
+                  <th
+                    scope="col"
+                    style=" background: var(--dashboard-bg); border-color: transparent"
+                  >
+                    Status
+                  </th>
+                  <th
+                    scope="col"
+                    style=" background: var(--dashboard-bg); border-color: transparent"
+                  ></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr
+                  *ngFor="let item of [1, 2, 3, 4, 5, 6, 7, 8, 10]; index as i"
+                >
+                  <th scope="row"><input type="checkbox" /></th>
+                  <td>54894</td>
+                  <td>19 Sept, 2020</td>
+                  <td>John Boyega</td>
+                  <td>Pick Up Truck</td>
+                  <td>KE 900 AAA</td>
+                  <td>NGN 32,000</td>
+                  <td class="p-2 ">
+                    <small
+                      [ngStyle]="{
+                        'background-color':
+                          i == 1 ? '#fad400' : 'var(--modified-success)'
+                      }"
+                      class="rounded p-1 text-white "
+                      >{{ i == 1 ? "Enroute" : "Delivered" }}</small
+                    >
+                  </td>
+                  <td class="position-relative">
+                    <span class="dots position-absolute font-weight-bolder ">
+                      . . .
+                    </span>
+                  </td>
+                </tr>
+                <!-- <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                  </tr> -->
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Card view -->
+          <div class="row mt-3 p-3" *ngIf="view == 'cards'">
+            <div
+              class="col-3"
+              *ngFor="
+                let card of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+                index as i
+              "
+            >
+              <div class="card mb-4 rounded" style="width: 14.5rem;">
+                <div class="card-body">
+                  <p
+                    class="mb-1 d-flex justify-content-center align-items-center"
+                  >
+                    <span class="flex-grow-1 d-flex flex-column">
+                      <small>Order ID Number</small>
+                      <span class="order-number font-weight-bold"
+                        >654738200</span
+                      >
+                    </span>
+                    <span
+                      style="background: #58C790; font-size: 10px"
+                      class=" text-center text-white px-2 rounded"
+                    >
+                      Delivered
+                    </span>
+                  </p>
+                  <!-- <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p> -->
+
+                  <div class="d-flex w-100 mt-1">
+                    <div class=" d-flex flex-column">
+                      <span class="align-self-start">
+                        <img
+                          class="image-1"
+                          src="assets/img/controls/small-circle.svg"
+                          alt=""
+                      /></span>
+                      <span class="align-self-start">
+                        <img
+                          class="image-2"
+                          src="assets/img/controls/small-line.svg"
+                          alt=""
+                      /></span>
+                      <span class="align-self-start">
+                        <img src="assets/img/controls/small-location.svg" alt=""
+                      /></span>
+                    </div>
+                    <div class="flex-grow-1 ">
+                      <div class="pb-2 px-1 border-bottom">
+                        <span class="small-text"
+                          >25B Gerrard Road, Ikoyi, Lagos Nigeria</span
+                        >
+                      </div>
+                      <div class="px-1 mt-2 ">
+                        <span class="px-1 small-text"
+                          >25 Peaceland Estate, Majek, Lekki
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="d-flex w-100 mt-1 border-top">
+                    <div class="text-center  flex-grow-1">
+                      <span class="small-text mr-1"
+                        ><i class="far fa-clock"></i
+                      ></span>
+                      <span class="small-text font-weight-bold "
+                        >Thu, 19 Sep 2020</span
+                      >
+                    </div>
+                    <div class="text-center  flex-grow-1">
+                      <span class="small-text mr-1"
+                        ><i class="far fa-money-bill-alt"></i
+                      ></span>
+                      <span class="small-text font-weight-bold"
+                        >NGN 46,345</span
+                      >
+                    </div>
+                  </div>
+
+                  <div
+                    style="height: 18px"
+                    class="d-flex justify-content-center align-items-center w-100"
+                  >
+                    <span>
+                      <i style="color: #BEBABA" class="fas fa-angle-down"></i
+                    ></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

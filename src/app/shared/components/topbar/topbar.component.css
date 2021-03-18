@@ -1,0 +1,18 @@
+html .bg-blue{
+  background-color: #008BCC !important;
+}
+
+html .bg-blue{
+  background-color: #008BCC !important;
+}
+
+html.sticky-header-active #header .header-body {
+  border-bottom-color: unset !important;
+}
+
+@media (max-width: 991px) {
+  #header .header-logo {
+    margin-left: -80px;
+  }
+
+}

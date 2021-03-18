@@ -1,0 +1,33 @@
+.title {
+  font-family: "SF Pro Display" !important;
+}
+
+.small-title {
+  color: var(--modified-text-color) !important;
+}
+
+h1 {
+  margin: 0 0 20px 0 !important;
+}
+
+.dots {
+  top: 5px;
+  left: 0%;
+}
+
+.start {
+  font-size: 1rem;
+}
+.options {
+  color: var(--heading-text-color) !important;
+  font-size: 0.7rem;
+}
+
+.tweaked-img{
+  transform: translate(0, -14px) scale(1.6) !important; 
+}
+
+.tweaking{
+  align-self: baseline;
+  margin-top: -9px !important;
+}

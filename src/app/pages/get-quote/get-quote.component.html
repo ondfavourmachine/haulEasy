@@ -1,0 +1,99 @@
+<app-topbar></app-topbar>
+
+<div role="main" class="main" style=" background-color: #FAFAFA !important;">
+		<section id="get-quote" class="section section-angled bg-gray border-0 m-0  z-index-3 pt-5">
+            <div class="container pt-1 pb-1">
+
+                <div class="row mb-5">
+                    <div class="col-lg-5 mt-5 pr-xl-5 mb-lg-0">
+                        <h2 class="text-10 mb-5 " style="color: var(--modified-text-color); letter-spacing: 1px;">REQUEST A QUOTE</h2>
+                        <p class="ls-0  fw-400 mb-5">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
+                        <p class="ls-0  fw-400 mb-5" style="font-size: 16px; font-weight: bold; color: #008BCC;">Request
+                            <i class="icon next ml-2 mr-2" style="margin-bottom: -5px;"></i>Approve
+                            <i class="icon next ml-2 mr-2"  style="margin-bottom: -5px;"></i>Invoice <i class="icon next ml-2 mr-2"  style="margin-bottom: -5px;"></i> Payment
+                        </p>
+
+                    </div>
+                    <div class="col-lg-7">
+                    <div  class="bg-white p-5" style="border-radius: 10px">
+                    <h2 class="text-center text-capitalize" style="color: var(--modified-text-color); letter-spacing: 1px;"> Complete Form
+                    </h2>
+                    <p class="alert" [class.alert-danger]="!status" [class.alert-success]="status" *ngIf="response">{{response}}</p>
+
+                      <form [formGroup]="form" (ngSubmit)="getQuote()">
+                        <div class="row">
+                          <div class="form-group col-lg-12 mt-5">
+                          <label for="from">Pickup Location</label>
+                            <input type="text" class="form-control customise  pull-left mb-3 " style=" border-radius: 4px; border-color: #fff; background-color: #E5E5E5; padding: 20px;" placeholder="From?" id="from" formControlName="from">
+                              <div *ngIf="from.touched && from.invalid" class="alert alert-danger error">
+                                <div *ngIf="from.errors.required">Pickup Location is required</div>
+                                <div *ngIf="from.errors.minlength">Pickup Location should be minimum of 3 characters</div>
+                              </div>
+                          </div>
+                          <div class="form-group col-lg-12">
+                          <label for="to">Drop-off Location</label>
+                            <input type="text" class="form-control customise  pull-left mb-3 mr-5" style=" border-radius: 4px; border-color: #fff; background-color: #E5E5E5; padding: 20px;" placeholder="To?" id="to" formControlName="to">
+                             <div *ngIf="to.touched && to.invalid" class="alert alert-danger error">
+                                <div *ngIf="to.errors.required">Drop-off Location is required</div>
+                                <div *ngIf="to.errors.minlength">Drop-off Location should be minimum of 3 characters</div>
+                             </div>
+                          </div>
+                          <div class="form-group col-lg-12">
+                          <label for="move">Move Date</label>
+                            <input type="date" class="form-control customise  pull-left mb-3 mr-5" style=" border-radius: 4px; border-color: #fff; background-color: #E5E5E5; padding: 20px;" placeholder="Date" id="move" formControlName="move">
+                            <div *ngIf="move.touched &&  move.invalid" class="alert alert-danger error">
+                              <div *ngIf="move.errors.required">Move Date is required</div>
+                            </div>
+                          </div>
+                          <div class="form-group col-lg-12">
+                          <label for="phone">Phone Number</label>
+                            <input type="text" class="form-control customise  pull-left mb-3 mr-5" style=" border-radius: 4px; border-color: #fff; background-color: #E5E5E5; padding: 20px;" placeholder="Enter number" id="phone" formControlName="phone">
+                              <div *ngIf="phone.invalid && (phone.touched || phone.dirty)" class="alert alert-danger error">
+                                <div *ngIf="phone.errors.required">Phone number is required</div>
+                                <div *ngIf="phone.errors.minlength">Phone number should be minimum of 10 characters</div>
+                                <div *ngIf="phone.errors.cannotContainSpace">Phone number cannot contain space</div>
+                              </div>
+                          </div>
+                          <div class="form-group col-lg-12">
+                          <label for="email">Email Address</label>
+                            <input type="email" class="form-control customise  pull-left mb-3 mr-5" style=" border-radius: 4px; border-color: #fff; background-color: #E5E5E5; padding: 20px;" placeholder="Email" id="email" formControlName="email">
+                            <div *ngIf="email.invalid && (email.touched || email.dirty)" class="alert alert-danger error">
+                              <div *ngIf="email.errors.required">Email is required</div>
+                              <div *ngIf="email.errors.cannotContainSpace">Email cannot contain space</div>
+                            </div>
+                          </div>
+
+                          <div class="form-group col-lg-12 text-center">
+                              <button class="btn btn-success" style="background-color: #008BCC; padding: 10px 40px;">Submit</button>
+                            </div>
+                        </div>
+                      </form>
+                      </div>
+                    </div>
+                </div>
+            </div>
+      </section>
+
+
+
+
+		<section id="support" class="section section-angled bg-gray border-0 m-0  z-index-3 pt-5">
+        <div class="container pb-5 mb-5">
+
+            <div class="row align-items-center mb-5 bg-orange " style="border-radius: 10px; padding: 70px;">
+                <div class="col-lg-4 pr-xl-5 mb-5 mb-lg-0">
+                    <h4 class="text-9 mb-1 text-white">Track your order</h4>
+                    <p class="ls-0  fw-400 mb-5 text-white">Get real-time information on the whereabouts of your order at every point in time from pick up to delivery. </p>
+                </div>
+                <div class="col-lg-8  cover-bg">
+                    <input type="text" placeholder="Enter Order ID" class="form-control cover-input"/>
+                    <button class="btn btn-info cover-send-btn">Send</button>
+                 </div>
+            </div>
+        </div>
+    </section>
+
+
+
+	</div>
+<app-bottombar></app-bottombar>

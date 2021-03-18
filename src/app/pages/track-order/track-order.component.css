@@ -1,0 +1,5 @@
+.sendBtn {
+  height: 48px;
+  background: var(--brighter-blue);
+  font-weight: 200;
+}
